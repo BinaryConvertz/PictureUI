@@ -20,6 +20,7 @@ void main() throws MalformedURLException, URISyntaxException {
     JLabel label = new JLabel(icon);
     JPanel panel = new JPanel(new FlowLayout());
     JPanel p = new JPanel();
+    JPanel lPanel = new JPanel(new FlowLayout());
 
     for(int _ : positions) {
         label.setIcon(icon);
@@ -31,10 +32,16 @@ void main() throws MalformedURLException, URISyntaxException {
     frame.setLayout(new FlowLayout());
     frame.add(panel);
     p.add(new JLabel(new Box(new GithubNameInfo().getName()).Names()), BorderLayout.NORTH);
-    frame.add(p);
 
-//    frame.add(label_2);
+    frame.add(p);
+    lPanel.add(new JLabel(
+            new GithubNameInfo().VersionString()
+                    + new GithubNameInfo().VERSION(1.0f)));
+
+//    frame.add(l);
     frame.add(label);
+    frame.add(lPanel);
+
     frame.setResizable(false);
 
     frame.setVisible(true);

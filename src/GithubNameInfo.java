@@ -6,5 +6,14 @@ public class GithubNameInfo {
         return  this.githubName;
     }
 
+    public String VersionString() {
+        return "Version: ";
+    }
+
+    public float VERSION(float v) {
+
+        return v;
+    }
+
 
 }
