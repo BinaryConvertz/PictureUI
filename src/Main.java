@@ -7,7 +7,6 @@ void Close(JFrame frame) {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 }
 
-
 void main() throws MalformedURLException, URISyntaxException {
 
    URI urlLink = HttpClients.GetServerClient(URI.create
@@ -19,15 +18,14 @@ void main() throws MalformedURLException, URISyntaxException {
     ImageIcon icon = new ImageIcon(urlLink.toURL());
     JFrame frame = new JFrame("Valued App");
     JLabel label = new JLabel(icon);
-//    JLabel label_2 = new JLabel("Ryan James");
     JPanel panel = new JPanel(new FlowLayout());
     JPanel p = new JPanel();
 
     for(int _ : positions) {
         label.setIcon(icon);
+
         frame.setSize(new Dimension(
                 positions.getFirst() - 80, positions.getLast() * 4));
-
     }
 
     frame.setLayout(new FlowLayout());
