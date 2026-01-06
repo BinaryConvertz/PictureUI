@@ -38,7 +38,6 @@ void main() throws MalformedURLException, URISyntaxException {
             new GithubNameInfo().VersionString()
                     + new GithubNameInfo().VERSION(1.0f)));
 
-//    frame.add(l);
     frame.add(label);
     frame.add(lPanel);
 
