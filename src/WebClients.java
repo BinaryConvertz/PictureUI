@@ -3,7 +3,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.http.HttpRequest;
 
-public class HttpClients {
+public class WebClients {
 
     public static URI GetServerClient(URL url) throws URISyntaxException {
 

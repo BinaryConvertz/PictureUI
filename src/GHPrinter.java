@@ -1,4 +1,4 @@
-public class GithubNameInfo {
+public class GHPrinter {
 
     public String githubName = "Username: BinaryConvertz";
 

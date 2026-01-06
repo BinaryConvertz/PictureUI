@@ -1,11 +1,11 @@
 import java.util.Locale;
 
-public class Box {
+public class UppercasePointer {
 
     public String Name = "";
 
 
-    public Box(String box) {
+    public UppercasePointer(String box) {
         this.Name = box;
     }
 
